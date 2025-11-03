@@ -1,1 +1,2 @@
 Test zdalnego brancha
+Zmiana wykonana w przeglądarc
