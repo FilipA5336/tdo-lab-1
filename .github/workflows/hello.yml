@@ -5,3 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, GitHub Actions!"
+  say-bye:
+    runs-on: ubuntu-latest
+    needs: say-hi
+    steps:
+      - run: echo "Bye!"
