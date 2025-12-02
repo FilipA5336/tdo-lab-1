@@ -1,2 +1,3 @@
-print("witaj to jest uruchomiony skrypt (GitHub Actions)")
-print("Liczenie :2+2=",2+2)
+import os
+name = os.getenv("GREETING_USER", "Nick")
+print(f"Witaj, {name}.)
