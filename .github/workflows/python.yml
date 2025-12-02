@@ -1,4 +1,4 @@
-name: Just run
+name: Just run ENV
 on: workflow_dispatch
 
 jobs:
@@ -7,5 +7,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Run script
+      - name: Run script env
+        env:
+          GREETING_USER: "Gurult"
         run: python3 script.py
